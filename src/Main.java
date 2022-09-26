@@ -6,7 +6,8 @@ public class Main {
     private static final Line1 line1 = new Line1(4, 9, 5);
     private static final Line2 line2 = new Line2(3, 1, 2);
     private static final Line3 line3 = new Line3(2, -1, 0);
-    private static final Picture picture = new Picture(circle, line1, line2, line3);
+    private static final Line4 line4    = new Line4(3, 2, 2);
+    private static final Picture picture = new Picture(circle, line1, line2, line3, line4);
 
     public static void main(String[] args){
         if(Test.testPoints(picture)){
