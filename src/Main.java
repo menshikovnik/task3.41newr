@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class Main {
 
-    private static final Circle circle = new Circle(3, 2, 5);
+    private static final Circle circle = new Circle(-3, 2, 5);
     private static final Line1 line1 = new Line1(4, 9, 5);
     private static final Line2 line2 = new Line2(3, 1, 2);
     private static final Line3 line3 = new Line3(2, -1, 0);
