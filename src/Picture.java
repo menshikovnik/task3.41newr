@@ -14,11 +14,12 @@ public class Picture {
     }
 public Enum.SimpleColor getColor(double x, double y){
 
-        if((!line4.isPointAboveLine(x, y) &&
-                 !circle.isCircleTrue(x, y) &&
-                 line1.isPointAboveLine(x, y)
-                 && line2.isPointAboveLine(x, y) && line3.isPointAboveLine(x, y))
-                 || (!line2.isPointAboveLine(x, y) && line1.isPointAboveLine(x, y))){
+    boolean l1 = line1.isPointAboveLine(x, y);
+    boolean l2 = line2.isPointAboveLine(x, y);
+    boolean l3 = line3.isPointAboveLine(x, y);
+    boolean l4 = line4.isPointAboveLine(x, y);
+    boolean circle1 = circle.isCircleTrue(x, y);
+        if( !l2 && l1){
         return Enum.SimpleColor.ORANGE;}
 
         else if(  line1.isPointAboveLine(x, y) && line2.isPointAboveLine(x, y)) {
